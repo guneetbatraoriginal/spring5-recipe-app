@@ -1,4 +1,4 @@
-package guru.springframework.domain;
+package com.springframework.domain;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -21,7 +21,7 @@ public class Recipe {
     private String url;
     private String directions;
     //todo add
-    //private Difficulty difficulty;
+    //private Difficulty difficulty
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "recipe")
     private Set<Ingredient> ingredients;
